@@ -66,6 +66,22 @@
 
             <x-card>
                 <x-text-row header="About" body="Resume" />
+                <div class="h-full flex flex-col justify-center">
+                    <p class="text-slate-400 mt-3 text-lg">
+                        I am a fullstack web developer with three years of experience in building and maintaining web
+                        applications using modern technologies. I have extensive knowledge in Go, PHP, Typescript, React
+                        and
+                        Laravel frameworks. I can work on both the frontend and the backend of a web project, ensuring
+                        high
+                        performance, scalability and security. I have successfully delivered projects for various
+                        clients
+                        across different domains such as e-commerce, education, social media and health care. I am
+                        always
+                        eager to learn new skills and tools to improve my web development capabilities. I am looking for
+                        challenging and rewarding opportunities to showcase my fullstack web development skills and
+                        contribute to the success of your organization.
+                    </p>
+                </div>
             </x-card>
         </section>
     </main>
