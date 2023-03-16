@@ -16,7 +16,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-zinc-900 m-3">
+<body class="bg-zinc-900 m-3 py-2">
     <main class="grid grid-cols-1 lg:grid-cols-2 gap-3">
         <section class="flex flex-col justify-between">
             <x-introduction-card />
@@ -30,12 +30,43 @@
         </section>
         <section class="overflow-hidden h-full">
             <x-top-bar />
-            <div class="grid grid-cols-2 gap-3 mt-3 h-full items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 h-full items-center">
                 <x-photo />
                 <div class="flex flex-col gap-5 h-full mt-5">
                     <x-bio-detail />
                 </div>
             </div>
+        </section>
+
+        <section class="col-span-2 grid grid-cols-[55%_1fr] gap-5">
+            <x-card>
+                <x-text-row header="Projects" body="See All" :isLink="true" />
+                <div
+                    class="flex gap-5 overflow-x-auto overflow-y-clip mt-3 scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-zinc-700">
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/Rent-N-Go-Backend" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/Rent-N-Go-Frontend" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/psw-cv-albet" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/bodyfits-inertia" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/undefined-bot" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/Okelah-RN" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/berita-uy" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/alumnifo" />
+                    <x-project src="https://source.unsplash.com/500x500?web"
+                        projectUrl="https://github.com/albetnov/personal-notes" />
+                </div>
+            </x-card>
+
+            <x-card>
+                <x-text-row header="About" body="Resume" />
+            </x-card>
         </section>
     </main>
     @stack('scripts')

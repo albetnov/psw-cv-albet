@@ -1,5 +1,6 @@
-<div class="rounded-lg h-1/2 bg-zinc-800 p-5 border border-black transition-colors duration-200 hover:border-zinc-500">
-    <h1 class="text-6xl text-white font-serif">Bringing your web to the society through Full Stack
+<div
+    class="rounded-lg h-1/2 flex flex-col justify-center bg-zinc-800 p-5 border border-black transition-colors duration-200 hover:border-zinc-500">
+    <h1 class="text-6xl break-words text-white font-serif">Bringing your web to the society through Full Stack
         Development
     </h1>
     <button
