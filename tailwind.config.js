@@ -11,6 +11,9 @@ module.exports = {
                 serif: ["Merriweather", "serif"],
             },
         },
+        ripple: (theme) => ({
+            colors: theme("colors"),
+        }),
     },
-    plugins: [],
+    plugins: [require("tailwindcss-ripple")()],
 };
