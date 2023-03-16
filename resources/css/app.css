@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .gradient-bg {
+        background: radial-gradient(white, #3984ff00 80%);
+    }
+
+    .shiny::after {
+        top: calc(var(--y, 0) * 1px - 40px);
+        left: calc(var(--x, 0) * 1px - 20px);
+    }
+
+    .shiny:hover::after {
+        opacity: 0.4;
+    }
+}
