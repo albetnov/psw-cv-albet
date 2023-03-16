@@ -28,17 +28,18 @@
                 <x-stats-card color="bg-pink-500" hover="hover:shadow-pink-300" header="10" body="Clients Happy" />
             </div>
         </section>
-        <section class="overflow-hidden h-full">
+
+        <section class="overflow-hidden h-full mb-24 lg:mb-0">
             <x-top-bar />
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 h-full items-center">
                 <x-photo />
-                <div class="flex flex-col gap-5 h-full mt-5">
+                <div class="flex flex-col gap-5 h-full mt-3s">
                     <x-bio-detail />
                 </div>
             </div>
         </section>
 
-        <section class="col-span-2 grid grid-cols-[55%_1fr] gap-5">
+        <section class="lg:col-span-2 grid grid-cols-1 lg:grid-cols-[55%_1fr] gap-5">
             <x-card>
                 <x-text-row header="Projects" body="See All" :isLink="true" />
                 <div
